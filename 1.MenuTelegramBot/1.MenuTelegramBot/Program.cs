@@ -6,46 +6,64 @@ namespace MenuTelegramBot
     {         
         static void Main(string[] args)
         {
-            string startWord = "Привет, мир!" +
-                               "Доступные команды: /start, /help, /info, /exit";
-            Console.WriteLine(startWord);
             string commandUser = "";
-            string nameUser;
+            string userName = "Пользователь";
+            DateTime dateOfCreation = DateTime.Now.Date;
+            int version = 1;
             
             while (commandUser != "/exit")
             {
+                Console.Clear();
+                Console.WriteLine($"Привет, {userName}!");
+                StartHello(userName);
+                
                 Console.WriteLine("Ваша команда:");
                 commandUser = Console.ReadLine();
                 
                 switch (commandUser)
                 {
                     case "/start":
-                        Console.WriteLine("Напишите ваше имя:");
-                        nameUser = Console.ReadLine();
+                        Console.WriteLine($"{userName}, напишите ваше имя:");
+                        userName = Console.ReadLine();
                         break;
                     case "/help":
-                        Console.WriteLine("Доступные команды: /start, /help, /info, /exit");
+                        Console.WriteLine($"Укажи нужную команду и получи ответ.");
+                        Console.WriteLine($"{userName}, нажмите ENTER чтобы посмотреть список команд");
+                        Console.ReadLine();
                         break;
                     case "/info":
-                        Console.WriteLine($"Версия программы 00.000.001 Дата создания {DateTime.Now.Date}");
+                        Console.WriteLine($"Версия программы: {version}\n" +
+                                          $"Дата создания: {dateOfCreation.ToString("dd.MM.yyyy")}");
+                        Console.WriteLine($"{userName}, нажмите ENTER чтобы посмотреть список команд");
+                        Console.ReadLine();
                         break;
-                    case "/echo":
-                        Console.WriteLine();
+                    case string s when s.Split()[0] == "/echo":
+                        if (CheckUser(userName))
+                        {
+                            break;
+                        }
+                        Console.WriteLine(s.Replace("/echo","").Trim());
+                        Console.WriteLine($"{userName}, нажмите ENTER чтобы посмотреть список команд");
+                        Console.ReadLine();
                         break;
                 }
-                Console.Clear();
+
+                version++;
+            }
+
+            static bool CheckUser(string currentUser)
+            {
+                return currentUser == "Пользователь";
+            }
+            
+            static void StartHello(string user)
+            {
+                string startWord = CheckUser(user)
+                    ? $"{user}, для тебя доступны команды: /start, /help, /info, /exit"
+                    : $"{user}, для тебя доступны команды: /start, /help, /info, /echo, /exit";
+                
+                Console.WriteLine(startWord);
             }
         }
     }
 }
-
-/*
-Вам предстоит создать консольное приложение, которое будет имитировать интерактивное меню бота согласно следующему плану:
-
-Приветствие: При запуске программы отображается сообщение приветствия со списком доступных команд: /start, /help, /info, /exit.
-    Обработка команды /start: Если пользователь вводит команду /start, программа просит его ввести своё имя. Сохраните введенное имя в переменную. Программа должна обращаться к пользователю по имени в каждом следующем ответе.
-    Обработка команды /help: Отображает краткую справочную информацию о том, как пользоваться программой.
-    Обработка команды /info: Предоставляет информацию о версии программы и дате её создания.
-    Доступ к команде /echo: После ввода имени становится доступной команда /echo. При вводе этой команды с аргументом (например, /echo Hello), программа возвращает введенный текст (в данном примере "Hello").
-Основной цикл программы: Программа продолжает ожидать ввод команды от пользователя, пока не будет введена команда /exit.
-*/
