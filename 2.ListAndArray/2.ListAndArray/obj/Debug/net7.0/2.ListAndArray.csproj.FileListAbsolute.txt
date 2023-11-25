@@ -1,0 +1,15 @@
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/bin/Debug/net7.0/2.ListAndArray
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/bin/Debug/net7.0/2.ListAndArray.deps.json
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/bin/Debug/net7.0/2.ListAndArray.runtimeconfig.json
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/bin/Debug/net7.0/2.ListAndArray.dll
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/bin/Debug/net7.0/2.ListAndArray.pdb
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.csproj.AssemblyReference.cache
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.AssemblyInfoInputs.cache
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.AssemblyInfo.cs
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.csproj.CoreCompileInputs.cache
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.dll
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/refint/2.ListAndArray.dll
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.pdb
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/2.ListAndArray.genruntimeconfig.cache
+/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/Debug/net7.0/ref/2.ListAndArray.dll
