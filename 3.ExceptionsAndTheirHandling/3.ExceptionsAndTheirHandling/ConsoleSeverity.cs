@@ -14,6 +14,10 @@ public class ConsoleSeverity
                 Console.BackgroundColor = ConsoleColor.DarkRed;
                 Console.ForegroundColor = ConsoleColor.White;
                 break;
+            case Severity.Info:
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Green;
+                break;
             default:
                 Console.ResetColor();
                 break;

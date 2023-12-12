@@ -3,5 +3,6 @@ namespace ExceptionsAndTheirHandling;
 public enum Severity
 {
     Warning,
-    Error
+    Error,
+    Info
 }
