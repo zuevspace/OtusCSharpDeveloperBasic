@@ -1,0 +1,15 @@
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.csproj.AssemblyReference.cache
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.AssemblyInfoInputs.cache
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.AssemblyInfo.cs
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.csproj.CoreCompileInputs.cache
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/bin/Debug/net7.0/4.Stack
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/bin/Debug/net7.0/4.Stack.deps.json
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/bin/Debug/net7.0/4.Stack.runtimeconfig.json
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/bin/Debug/net7.0/4.Stack.dll
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/bin/Debug/net7.0/4.Stack.pdb
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.dll
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/refint/4.Stack.dll
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.pdb
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/4.Stack.genruntimeconfig.cache
+/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/4.Stack/obj/Debug/net7.0/ref/4.Stack.dll
