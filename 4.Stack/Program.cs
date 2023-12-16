@@ -7,6 +7,11 @@ class Program
     private static void Main()
     {
         var s = new Stack("a", "b", "c");
+        //Доп. задание 1
+        s.Merge(new Stack("1", "2", "3"));
+        //Доп. задание 2
+        var s2 = Stack.Concat(new Stack("a", "b", "c"), new Stack("1", "2", "3"), new Stack("А", "Б", "В"));
+        Console.WriteLine(string.Join(",",s2));
         // size = 3, Top = 'c'
         Console.WriteLine($"size = {s.Size()}, Top = '{s.Top()}'");
         var deleted = s.Pop();
