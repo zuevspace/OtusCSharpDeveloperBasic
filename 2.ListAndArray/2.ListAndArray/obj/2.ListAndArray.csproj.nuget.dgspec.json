@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj": {}
+    "/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj": {}
   },
   "projects": {
-    "/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj": {
+    "/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj",
+        "projectUniqueName": "/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj",
         "projectName": "2.ListAndArray",
-        "projectPath": "/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj",
+        "projectPath": "/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/2.ListAndArray.csproj",
         "packagesPath": "/Users/zuev/.nuget/packages/",
-        "outputPath": "/Users/zuev/SourceTree/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/",
+        "outputPath": "/Users/zuev/RiderProjects/OtusCSharpDeveloperBasic/2.ListAndArray/2.ListAndArray/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zuev/.nuget/NuGet/NuGet.Config"
