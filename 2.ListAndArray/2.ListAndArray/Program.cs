@@ -8,10 +8,11 @@ public class Program
     {
         const int max = 1_000_000;
         const int searchElement = 496_753;
+        const int dividerElement = 777;
         
-        var resultList = SpeedCreateList(max, searchElement);
-        var resultArrayList = SpeedCreateArrayList(max, searchElement);
-        var resultLinkedList = SpeedCreateLinkedList(max, searchElement);
+        var resultList = SpeedCreateList(max, searchElement, dividerElement);
+        var resultArrayList = SpeedCreateArrayList(max, searchElement, dividerElement);
+        var resultLinkedList = SpeedCreateLinkedList(max, searchElement, dividerElement);
         
         Console.Clear();
         Console.WriteLine(resultList);
@@ -19,7 +20,7 @@ public class Program
         Console.WriteLine(resultLinkedList);
     }
 
-    private static string SpeedCreateList(int maxInt, int searchInt)
+    private static string SpeedCreateList(int maxInt, int searchInt, int divider)
     {
         //List - создать
         var list = new List<int>();
@@ -38,8 +39,7 @@ public class Program
         
         timeList.Restart();
         //List - найти 496753-ий
-        timeList.Start();
-        var itemList = list.Contains(searchInt);
+        var itemList = list.ElementAt(searchInt);
         timeList.Stop();
         listCreationTime = timeList.Elapsed.TotalMilliseconds;
         
@@ -47,20 +47,24 @@ public class Program
         
         timeList.Restart();
         //List - без остатка делится на 777
-        timeList.Start();
-        foreach (var l in list.Where(l => l % 777 == 0))
+        var sb = new StringBuilder();
+        
+        foreach (var l in list.Where(l => l % divider == 0))
         {
-            Console.WriteLine(l);
+            sb.Append($"{l}\n");
         }
+        
+        Console.WriteLine(sb);
+        
         timeList.Stop();
         listCreationTime = timeList.Elapsed.TotalMilliseconds;
         
-        stringBuilderList.Append($"List: Время поиска элемента который делится без остатка на 777 - {listCreationTime} мс\n");
+        stringBuilderList.Append($"List: Время поиска элемента который делится без остатка на {divider} - {listCreationTime} мс\n");
 
         return stringBuilderList.ToString();
     }
     
-    private static string SpeedCreateArrayList(int maxInt, int searchInt)
+    private static string SpeedCreateArrayList(int maxInt, int searchInt, int divider)
     {
         //ArrayList - создать
         var arrayList = new ArrayList();
@@ -79,8 +83,7 @@ public class Program
         
         timeArrayList.Restart();
         //ArrayList - найти 496753-ий элемент
-        timeArrayList.Start();
-        var itemArrayList = arrayList.Contains(searchInt);
+        var itemArrayList = (int)arrayList[searchInt];
         timeArrayList.Stop();
         arrayListCreationTime = timeArrayList.Elapsed.TotalMilliseconds;
         
@@ -88,23 +91,26 @@ public class Program
         
         timeArrayList.Restart();
         //ArrayList - без остатка делится на 777
-        timeArrayList.Start();
+        var sb = new StringBuilder();
+        
         foreach (var al in arrayList)
         {
-            if ((int)al % 777 == 0)
+            if ((int)al % divider == 0)
             {
-                Console.WriteLine(al);
+                sb.Append($"{al}\n");
             }
         }
+        Console.WriteLine(sb);
+        
         timeArrayList.Stop();
         arrayListCreationTime = timeArrayList.Elapsed.TotalMilliseconds;
         
-        stringBuilderArrayList.Append($"ArrayList: Время поиска элемента который делится без остатка на 777 - {arrayListCreationTime} мс\n");
+        stringBuilderArrayList.Append($"ArrayList: Время поиска элемента который делится без остатка на {divider} - {arrayListCreationTime} мс\n");
         
         return stringBuilderArrayList.ToString();
     }
 
-    private static string SpeedCreateLinkedList(int maxInt, int searchInt)
+    private static string SpeedCreateLinkedList(int maxInt, int searchInt, int divider)
     {
         //LinkedList - создать
         var linkedList = new LinkedList<int>();
@@ -123,8 +129,7 @@ public class Program
         
         timeLinkedList.Restart();
         //LinkedList - найти 496753-ий элемент
-        timeLinkedList.Start();
-        var itemLinkedList = linkedList.Contains(searchInt);
+        var itemLinkedList = linkedList.ElementAt(searchInt);
         timeLinkedList.Stop();
         linkedListCreationTime = timeLinkedList.Elapsed.TotalMilliseconds;
         
@@ -132,15 +137,18 @@ public class Program
         
         timeLinkedList.Restart();
         //LinkedList - без остатка делится на 777
-        timeLinkedList.Start();
-        foreach (var ll in linkedList.Where(ll => ll % 777 == 0))
+        var sb = new StringBuilder();
+        
+        foreach (var ll in linkedList.Where(ll => ll % divider == 0))
         {
-            Console.WriteLine(ll);
+            sb.Append($"{ll}\n");
         }
+        Console.WriteLine(sb);
+        
         timeLinkedList.Stop();
         linkedListCreationTime = timeLinkedList.Elapsed.TotalMilliseconds;
         
-        stringBuilderLinkedList.Append($"LinkedList: Время поиска элемента который делится без остатка на 777 - {linkedListCreationTime} мс\n");
+        stringBuilderLinkedList.Append($"LinkedList: Время поиска элемента который делится без остатка на {divider} - {linkedListCreationTime} мс\n");
 
         return stringBuilderLinkedList.ToString();
     }
