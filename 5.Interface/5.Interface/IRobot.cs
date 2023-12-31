@@ -2,17 +2,11 @@ namespace _5.Interface;
 
 public interface IRobot
 {
-    public string GetInfo()
-    {
-        throw new Exception();
-    }
-    
-    public List<string> GetComponents()
-    {
-        throw new Exception();
-    }
+    string GetInfo();
 
-    public string GetRobotType()
+    List<string> GetComponents();
+
+    string GetRobotType()
     {
         return "I am a simple robot.";
     }
